@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HGLabor.de</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="particles" id="particles-js"></div>
+    <div class="lightning"></div>
+    
+    <header>
+        <div class="logo-container">
+            <img src="img/hglabor-icon.png" alt="HG Labor Logo" class="logo pulse">
+            <h1>HGLABOR</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about" class="nav-link hover-underline">About</a></li>
+                <li><a href="#features" class="nav-link hover-underline">Features</a></li>
+                <li><a href="#join" class="nav-link hover-underline">Join</a></li>
+                <li><a href="#rules" class="nav-link hover-underline">Rules</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+            <h2 class="glitch" data-text="WELCOME TO">WELCOME TO</h2>
+            <h2 class="glitch" data-text="HGLABOR">HGLABOR</h2>
+            <div class="server-info">
+                <p>
+                    <span class="server-status online" title="Server Online"></span>
+                    <i class="fas fa-server"></i> hglabor.de
+                </p>
+                <p>
+                    <span class="server-status online" title="Server Online"></span>
+                    <i class="fas fa-users"></i> <span id="playerCount">Loading...</span>/500 players online
+                </p>
+            </div>
+                <a href="#join" class="cta-button shine">JOIN NOW</a>
+            </div>
+            <div class="hero-image">
+                <img src="img/hglabor-icon.png" alt="HG Labor" class="floating">
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <h3 class="section-title">ABOUT HG LABOR</h3>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>HG Labor is the official Minecraft server of German YouTuber <strong>NoRisk</strong>, featuring a unique HeroFFA Server custom mods.</p>
+                    <p>The server experience is the best when using the <a href="https://norisk.gg/" target="_blank">Norisk Client</a>.</p>
+                    <p>With regular events, and updates, HGLabor stays up-to-date and exciting for its community.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="section dark">
+            <h3 class="section-title">SERVER FEATURES</h3>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-skull"></i>
+                    </div>
+                    <h4>HeroFFA</h4>
+                    <p>With the Norisk Client you can play HeroFFA on our server. Fight your friends with superpowers.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-users-cog"></i>
+                    </div>
+                    <h4>Custom Features</h4>
+                    <p>Unique server modifications created specifically for HGLabor.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h4>Regular Events</h4>
+                    <p>Special events and seasons with unique gameplay twists.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h4>Active Staff</h4>
+                    <p>Dedicated team ensuring fair play and great community experience.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="join" class="section">
+            <h3 class="section-title">HOW TO JOIN</h3>
+            <div class="join-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <p>Make sure you have Minecraft Java Edition</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <p>Add the server address: <strong>hglabor.de</strong></p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <p>Join the server</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <p>Have Fun</p>
+                </div>
+            </div>
+            <div class="ip-box">
+                <input type="text" value="hglabor.de" id="server-ip" readonly>
+                <button id="copy-ip" class="copy-button"><i class="far fa-copy"></i> Copy</button>
+            </div>
+        </section>
+
+        <section id="rules" class="section dark">
+            <h3 class="section-title">SERVER RULES</h3>
+            <div class="rules-list">
+                <div class="rule">
+                    <i class="fas fa-ban"></i>
+                    <p>No hacking, cheating, or exploiting bugs</p>
+                </div>
+                <div class="rule">
+                    <i class="fas fa-comment-slash"></i>
+                    <p>No toxic behavior, racism, or harassment</p>
+                </div>
+                <div class="rule">
+                    <i class="fas fa-grin-beam-sweat"></i>
+                    <p>Respect all players and staff members</p>
+                </div>
+                <div class="rule">
+                    <i class="fas fa-home"></i>
+                    <p>No griefing or stealing (PvP is allowed)</p>
+                </div>
+                <div class="rule">
+                    <i class="fas fa-ad"></i>
+                    <p>No advertising other servers</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="https://www.youtube.com/@NoRiskk" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://discord.gg/wgktZkTJTK" target="_blank"><i class="fab fa-discord"></i></a>
+            </div>
+            <p>HGLabor is not affiliated with Mojang or Microsoft. All rights reserved.</p>
+            <p>&copy; 2025 HGLabor | hglabor.de</p>
+            <p>Made with &hearts; by <a href="https://winniepat.de" target="_blank">WinniePat</a></p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
