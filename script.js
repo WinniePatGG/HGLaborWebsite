@@ -183,29 +183,22 @@ document.addEventListener('DOMContentLoaded', function() {
         const playerCountElement = document.getElementById('playerCount');
         const statusIndicator = document.querySelector('.server-status');
         
-        const endpoints = [
-            'https://api.winniepat.de/api/v1/status/hglabor.de'
-        ];
-    
         let data;
         let success = false;
-    
-        for (const endpoint of endpoints) {
-            try {
-                const response = await fetch(endpoint, {
-                    headers: {
-                        'Accept': 'application/json'
-                    }
-                });
-                
-                if (!response.ok) throw new Error('Bad response');
-                
-                data = await response.json();
-                success = true;
-                break;
-            } catch (error) {
-                console.log(`Failed with ${endpoint}, trying next...`);
-            }
+
+        try {
+            const response = await fetch('https://api.winniepat.de/api/v1/status/hglabor.de', {
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
+
+            if (!response.ok) throw new Error('Bad response');
+
+            data = await response.json();
+            success = true;
+        } catch (error) {
+            console.log(`Failed. ${error}`)
         }
     
         if (!success) {
